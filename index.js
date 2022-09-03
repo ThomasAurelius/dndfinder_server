@@ -14,7 +14,8 @@ const app = express();
 
 
 const corsOptions ={
-    origin:'http://mern-dndfinder.vercel.app', 
+    origin:'https://dndfinder.herokuapp.com/', 
+  
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }

@@ -14,7 +14,7 @@ const app = express();
 
 
 const corsOptions ={
-    origin:'https://63140a9c4f16cf0c160a11a3--shimmering-gnome-6c82a9.netlify.app/', 
+    origin:'https://63140b3c063a091010a88d38--shimmering-gnome-6c82a9.netlify.app/posts', 
   
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200

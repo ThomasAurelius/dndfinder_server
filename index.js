@@ -13,8 +13,8 @@ const app = express();
 
 
 const corsOptions ={
-    origin:'https://shimmering-gnome-6c82a9.netlify.app', 
-  
+    //origin:'https://shimmering-gnome-6c82a9.netlify.app', 
+    origin:'http://localhost:3000',
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
@@ -25,15 +25,12 @@ app.use(express.urlencoded({ limit: '30mb', extended: true }))
 app.options('*', cors())
 
 
-
-
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT, SIGNIN, SIGNUP, DELETE, PATCH, UPDATE, FETCH_ALL");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Accept, Authorization");
   next();
 });
-
 
 
 

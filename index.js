@@ -14,7 +14,7 @@ const app = express();
 
 
 const corsOptions ={
-    origin:'https://dndfinder.herokuapp.com/', 
+    origin:'https://63140a9c4f16cf0c160a11a3--shimmering-gnome-6c82a9.netlify.app/', 
   
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200

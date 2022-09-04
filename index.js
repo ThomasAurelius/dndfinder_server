@@ -2,7 +2,6 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
-import path from 'path'
 
 import postRoutes from './routes/posts.js';
 import userRouter from "./routes/user.js";
@@ -37,8 +36,6 @@ app.use(function(req, res, next) {
 
 
 
-app.use("/posts", postRoutes);
-app.use("/user", userRouter);
 
 const PORT = process.env.PORT || 5000;
 
@@ -48,3 +45,6 @@ mongoose.connect("mongodb+srv://dndfinder:dndfinder3451@cluster0.fzk8u.mongodb.n
 
 // mongoose.set('useFindAndModify', false);
 
+
+app.use("/posts", postRoutes);
+app.use("/user", userRouter);
